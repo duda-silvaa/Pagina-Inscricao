@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/style.css"/>
+    <link rel="icon" type="image/icon" href="assets/img/icon.png">
+    <title>Inscrições - Inova Maranhao</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="imagem">
+            <img src="assets/img/image.png" alt="">
+        </div>
+
+        <div class="form">
+            <form action="#">
+                <!-- div para o cabeçalho-->
+                <div class="cabecalho">
+                    <div class="title">
+                        <h1>Inscreva-se</h1>
+                    </div>
+                </div> <!-- fechou div cabecalho-->
+
+                <!-- div para os inputs-->
+                <div class="inputs">
+
+                    <div class="input-box">
+                        <label for="Nome">Nome Completo</label>
+                        <input id="Nome" type="text" name="Nome" placeholder="Digite seu Nome Completo" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cpf">CPF</label>
+                        <input id="cpf" type="number" name="cpf" placeholder="Digite seu CPF" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="idade">Idade</label>
+                        <input id="idade" type="number" name="idade" placeholder="Digite sua idade" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="identidade">Identidade</label>
+                        <input class="identidade" type="file" name="identidade" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <label for="residencia">Comprovante de Residência</label>
+                        <input class="residencia" type="file" name="residencia" required>
+                    </div>
+
+                    <div class="trilha">
+                        <div class="title-trilha">
+                            <h4>Qual trilha você quer realizar?</h4>
+                        </div>
+
+                        <div class="opcoes">
+                            <div class="opcoes-inputs">
+                                <input type="radio" id="FrontEnd" name="opcao">
+                                <label for="FrontEnd">Front-End</label>
+                            </div>
+
+                            <div class="opcoes-inputs">
+                                <input type="radio" id="BackEnd" name="opcao">
+                                <label for="BackEnd">Back-End</label>
+                            </div>
+
+                            <div class="opcoes-inputs">
+                                <input type="radio" id="Dados" name="opcao">
+                                <label for="Dados">Ciência de Dados</label>
+                            </div>
+
+                            <div class="opcoes-inputs">
+                                <input type="radio" id="jogos" name="opcao">
+                                <label for="jogos">Desenvolvimento de Jogos</label>
+                            </div>
+
+                            <div class="opcoes-inputs">
+                                <input type="radio" id="UX" name="opcao">
+                                <label for="UX">Design</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--falta colocar a div p opcao de trilha-->
+                </div>
+                <div class="enviar">
+                    <button><a href="#">Enviar</a></button>
+                </div>
+            </form>
+
+        </div>
+
+
+    </div>
+
+    
+</body>
+</html>

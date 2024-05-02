@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(230, 162, 75);
+}
+
+.container{
+    width: 80%;
+    display: flex;
+    box-shadow: 6px 6px 11px rgba(0, 0, 0, .212);
+}
+
+.imagem{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff6600;
+    padding: 1rem;
+}
+
+.imagem img{
+    width: 35rem;
+}
+
+.form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #adb7c5;
+    padding: 3rem;
+}
+
+.cabecalho{
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho h1::after { 
+    content: '';
+    display: block;
+    width: 11.5rem;
+    height: 0.3rem;
+    background-color: #ff6600;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.inputs{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.2rem;
+ 
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 1px 6px #5f4e4e1c;
+    font-size: 0.8rem;
+    background-color: #fff;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+
+.input-box label,
+.title-trilha h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+    font-size: 0.9;
+    font-weight: 600;
+}
+
+.opcoes{
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+}
+
+.opcoes-inputs input {
+    margin-right: 0.03rem;
+}
+
+.opcoes-inputs label {
+    font-size: 0.86rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.enviar button {
+    width: 100%;
+    margin-top: 0.4rem;
+    border: none;
+    background-color: #ff6600;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.enviar button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+/*resposividade*/
+
+@media screen and (max-width: 1330px) {
+    .imagem {
+        display: none;
+    }
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .inputs {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+    .opcoes {
+        margin-top: 2rem;
+    }
+    .opcoes {
+        flex-direction: column;
+    }
+    .opcoes h6 {
+        margin: 0;
+    }
+    .opcoes {
+        margin-top: 0.5rem;
+    }
+}

@@ -1,0 +1,9 @@
+<div class="input-box">
+    <label for="identidade">Identidade</label>
+    <input class="identidade" type="file" name="identidade" required>
+</div>
+
+<div class="input-box">
+    <label for="residencia">Comprovante de Residência</label>
+    <input class="residencia" type="file" name="residencia" required>
+</div>
